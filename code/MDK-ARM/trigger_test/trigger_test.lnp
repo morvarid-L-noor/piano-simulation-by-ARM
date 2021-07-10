@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"trigger_test\startup_stm32f103xe.o"
+"trigger_test\main.o"
+"trigger_test\stm32f1xx_it.o"
+"trigger_test\stm32f1xx_hal_msp.o"
+"trigger_test\stm32f1xx_hal_gpio_ex.o"
+"trigger_test\stm32f1xx_hal_adc.o"
+"trigger_test\stm32f1xx_hal_adc_ex.o"
+"trigger_test\stm32f1xx_hal.o"
+"trigger_test\stm32f1xx_hal_rcc.o"
+"trigger_test\stm32f1xx_hal_rcc_ex.o"
+"trigger_test\stm32f1xx_hal_gpio.o"
+"trigger_test\stm32f1xx_hal_dma.o"
+"trigger_test\stm32f1xx_hal_cortex.o"
+"trigger_test\stm32f1xx_hal_pwr.o"
+"trigger_test\stm32f1xx_hal_flash.o"
+"trigger_test\stm32f1xx_hal_flash_ex.o"
+"trigger_test\stm32f1xx_hal_exti.o"
+"trigger_test\stm32f1xx_hal_dac.o"
+"trigger_test\stm32f1xx_hal_dac_ex.o"
+"trigger_test\stm32f1xx_hal_tim.o"
+"trigger_test\stm32f1xx_hal_tim_ex.o"
+"trigger_test\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "trigger_test\trigger_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "trigger_test.map" -o trigger_test\trigger_test.axf
